@@ -16,10 +16,9 @@
 title: MultiNLP Lab of Tianjin University
 name: MultiNLP Lab
 description: 
-  This is a blog of someone passionate about technology who wants to share some of the things he knows
-  about Application Development, Integration, Cloud, Big Data and Digital Transformation
+  This is home of MultiNLP Lab of Tianjin University, China 
 baseurl: "/introduction" # the subpath of your site, e.g. /blog
-github_username:  alainpham
+github_username:  multinlp-tju
 
 # jekyll-paginate configuration
 paginate: 10
