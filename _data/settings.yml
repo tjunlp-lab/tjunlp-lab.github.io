@@ -15,14 +15,14 @@ menu:
         link: /people/mentor
       - name: Students
         link: /people/students
-  - name: Poblications
+  - name: Publications
     link: /publications
   - name: Datasets
     link: /datasets
   - name: Schedules
     link: https://github.com/multinlp-tju/TJU_MultiNLP_ReadingGroup
   - name: Tags
-    link: /tag
+    link: /tags
   - name: Follow me
     submenu:
       - name: GitHub
