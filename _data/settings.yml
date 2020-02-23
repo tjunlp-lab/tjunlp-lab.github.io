@@ -12,9 +12,9 @@ menu:
   - name: People
     submenu:
       - name: Mentor
-        link: /projects/mentor
+        link: /people/mentor
       - name: Students
-        link: /projects/students
+        link: /people/students
   - name: Poblications
     link: /publications
   - name: Datasets
