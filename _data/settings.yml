@@ -15,8 +15,8 @@ menu:
         link: /projects/students
   - name: Poblications
     link: /publications
-  - name: Lab
-    link: /lab
+  - name: datasets
+    link: /datasets
   - name: tags
     link: /tag
   - name: Follow me
