@@ -8,7 +8,7 @@ google-ID: ''
 
 menu:
   - name: Introduction
-    link: /lab
+    link: /introduction
   - name: People
     submenu:
       - name: Mentor
@@ -19,6 +19,8 @@ menu:
     link: /publications
   - name: Datasets
     link: /datasets
+  - name: Schedules
+    link: https://github.com/multinlp-tju/TJU_MultiNLP_ReadingGroup
   - name: Tags
     link: /tag
   - name: Follow me
