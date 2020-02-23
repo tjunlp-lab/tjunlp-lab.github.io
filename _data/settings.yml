@@ -19,6 +19,8 @@ menu:
     link: /publications
   - name: Datasets
     link: /datasets
+  - name: Schedules
+    link: https://github.com/multinlp-tju/TJU_MultiNLP_ReadingGroup
   - name: Tags
     link: /tags
   - name: Follow me
