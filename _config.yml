@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MultiNLP Lab of Tianjin University
-name: MultiNLP Lab
+title: TJUNLP Lab
+name: TJUNLP Lab
 description: 
-  This is home of MultiNLP Lab of Tianjin University, China 
+  This is home of TJUNLP Lab of Tianjin University, China 
 baseurl: "/introduction" # the subpath of your site, e.g. /blog
 github_username:  multinlp-tju
 

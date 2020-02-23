@@ -13,20 +13,16 @@ menu:
     link: /events
   - name: Publications
     link: /publications
-  - name: Datasets
-    link: /datasets
+  - name: Tags
+    link: /tags
   - name: Members
     submenu:
       - name: Mentor
         link: /members/mentor
       - name: Students
         link: /members/students
-  - name: Schedules
-    link: 
   - name: Reading Group
     link: https://github.com/multinlp-tju/TJU_MultiNLP_ReadingGroup
-  - name: Tags
-    link: /tags
   - name: Follow us
     submenu:
       - name: GitHub
