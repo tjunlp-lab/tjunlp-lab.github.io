@@ -9,6 +9,8 @@ google-ID: ''
 menu:
   - name: About us
     link: /introduction
+  - name: Events
+    link: /events
   - name: Publications
     link: /publications
   - name: Datasets
