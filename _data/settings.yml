@@ -9,16 +9,16 @@ google-ID: ''
 menu:
   - name: Introduction
     link: /introduction
-  - name: People
-    submenu:
-      - name: Mentor
-        link: /people/mentor
-      - name: Students
-        link: /people/students
   - name: Publications
     link: /publications
   - name: Datasets
     link: /datasets
+  - name: Members
+    submenu:
+      - name: Mentor
+        link: /members/mentor
+      - name: Students
+        link: /members/students
   - name: Schedules
     link: 
   - name: Reading Group
