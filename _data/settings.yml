@@ -20,7 +20,7 @@ menu:
   - name: Datasets
     link: /datasets
   - name: Schedules
-    link: https://github.com/multinlp-tju/TJU_MultiNLP_ReadingGroup
+    link: /datasets
   - name: Tags
     link: /tags
   - name: Follow me
