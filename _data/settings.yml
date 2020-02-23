@@ -4,30 +4,30 @@ disqus:
   disqus_shortname: 'apham'
 
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
-google-ID: 'UA-91332049-1'
+google-ID: ''
 
 menu: 
-  - name: Featured Projects
+  - name: Lab
     submenu:
-      - name: MicroBam
-        link: /projects/microbam
-      - name: OurLegacy
-        link: /projects/ourlegacy
-  - name: Posts
-    link: /
-  - name: Tags
-    link: /tags
-  - name: About
-    link: /about
+      - name: Mentor
+        link: /projects/mentor
+      - name: Students
+        link: /projects/students
+  - name: Poblications
+    link: /publications
+  - name: Lab
+    link: /lab
+  - name: tags
+    link: /tag
   - name: Follow me
     submenu:
       - name: GitHub
         icon: github
-        link: http://github.com/alainpham
+        link: https://github.com/multinlp-tju
       - name: LinkedIn
         icon: linkedin-square
-        link: http://www.linkedin.com/in/alainpham
+        link: https://github.com/multinlp-tju
       - name: Twitter
         icon: twitter
-        link: https://twitter.com/koint
+        link: https://github.com/multinlp-tju
     
