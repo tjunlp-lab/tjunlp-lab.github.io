@@ -6,7 +6,9 @@ disqus:
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
 google-ID: ''
 
-menu: 
+menu:
+  - name: Introduction
+    link: /lab
   - name: Lab
     submenu:
       - name: Mentor
