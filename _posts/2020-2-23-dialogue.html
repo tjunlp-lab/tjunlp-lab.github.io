@@ -1,0 +1,50 @@
+---
+layout: default
+title:  "Machine Translation"
+date:   2020-2-23 09:00:00 +0200
+published: 2020-2-23 09:00:00 +0200
+comments: true
+categories: machine-tranlation
+tags: [machine-translation, MT]
+github: "none..."
+---
+
+<h2>
+    Task-Oriented Dialogue System
+<h2>
+<HR style="FILTER: alpha(opacity=0,finishopacity=100,style=1)" width="85%" color=#987cb9 SIZE=10>
+
+<p>
+    任务导向型对话系统（Task-Oriented Dialogue System）指特定条件下提供信息或服务的对话系统。通常是为了满足带有明确目的的用户，例如查餐厅、找酒店、订机票等任务场景。如今越来越多的被应用到实际的场景中，例如siri，阿里小密这类产品。
+    传统的Pipeline结构的任务型对话系统由4个关键模块组成：自然语言理解（NLU）、对话状态追踪（DST）、对话策略学习（DPL）、自然语言生成（NLG）。
+    NLU模块主要完成领域识别、意图识别、槽填充，通常采用分类和序列标注的相关技术；DST模块用于追踪多轮对话的状态信息，最新的工作已与NLU模块融合，可采用分类模型、序列到序列模型等技术；DPL模块主要用于学习不同对话状态下的对话策略，通常采用深度强化学习的相关技术；NLG模块负责生成自然语言形式的系统回复，通常采用序列到序列的深度学习模型。
+    如今，任务型对话系统正在逐渐向端到端的生成式对话系统发展。在保证任务型对话的基本流程不变的情况下，利用神经网络和强化学习等技术代替人工经验和干预的部分，每个模块统计化、学习化。
+</p>
+<p>
+    NMT基于端到端的神经网络模型（seq2seq），核心模块从循环神经网络（RNN）逐渐演变为现在主流的基于自注意力机制（self-attention）的Transformer架构。近年来，NMT取得了显著的成绩，在某些特定领域及限制场景上，甚至可以接近人类的水平。但是，仍然有许多问题亟待解决。比如针对资源稀缺的语言对上的翻译模型质量较低；篇章级别的翻译不够连贯通顺等。
+</p>
+
+<!--more-->
+<h2>
+    近两年实验室相关进展
+</h2>
+<HR style="FILTER: alpha(opacity=0,finishopacity=100,style=1)" width="85%" color=#987cb9 SIZE=10>
+
+<ul>
+    <li>
+        “面向任务导向型对话的端到端省略和共指消解模型”<br>
+        Jun Quan, Deyi Xiong, Bonnie Webber and Changjian Hu. GECOR: An End-to-End Generative Ellipsis and Co-reference Resolution Model for Task-Oriented Dialogue. EMNLP 2019. Long Paper.
+        <p>
+            我们提出了一个端到端的生成式模型，将多轮对话中存在的省略和指代现象在一个统一的模型中解决。我们还将该模型与任务导向型对话系统相结合，提出一个多任务学习框架，利用省略和指代消解任务帮助提升对话任务的成功率。另外，我们基于一个公开数据集人工标注了省略和指代信息，发布了一个新数据集。 
+        </p>
+    </li>
+    <li>
+        “面向端到端的任务导向型对话的有效数据增强”<br>
+        Jun Quan, Deyi Xiong. Effective Data Augmentation Approaches to End-to-End Task-Oriented Dialogue. IALP 2019
+        <p>
+            任务导向型对话的数据非常稀缺，我们分别从词级别和句级别出发，提出使用四种不同的方式对任务导向型对话进行数据增强。最终帮助端到端的任务型对话系统取得最佳性能。
+        </p>
+    </li>
+</ul>
+
+
