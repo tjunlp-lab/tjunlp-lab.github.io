@@ -9,7 +9,7 @@ google-ID: ''
 menu:
   - name: Introduction
     link: /lab
-  - name: Lab
+  - name: People
     submenu:
       - name: Mentor
         link: /projects/mentor
@@ -17,9 +17,9 @@ menu:
         link: /projects/students
   - name: Poblications
     link: /publications
-  - name: datasets
+  - name: Datasets
     link: /datasets
-  - name: tags
+  - name: Tags
     link: /tag
   - name: Follow me
     submenu:
