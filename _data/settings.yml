@@ -21,10 +21,10 @@ menu:
         link: /members/mentor
       - name: Students
         link: /members/students
-  - name: Reading Group
-    link: https://github.com/multinlp-tju/TJU_MultiNLP_ReadingGroup
   - name: Follow us
     submenu:
+      - name: Reading Group
+        link: https://github.com/multinlp-tju/TJU_MultiNLP_ReadingGroup
       - name: GitHub
         icon: github
         link: https://github.com/multinlp-tju
