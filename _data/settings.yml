@@ -7,21 +7,21 @@ disqus:
 google-ID: ''
 
 menu:
-  - name: About us
+  - name: Home
     link: /introduction
-  - name: Events
-    link: /events
-  - name: Publications
-    link: /publications
-  - name: Tags
-    link: /tags
-  - name: Members
+  - name: People
     submenu:
       - name: Mentor
         link: /members/mentor
       - name: Students
         link: /members/students
-  - name: Follow us
+  - name: Publications
+    link: /publications
+  - name: Resource
+    link: /tags
+  - name: Events
+    link: /events
+  - name: Contact
     submenu:
       - name: Reading Group
         link: https://github.com/multinlp-tju/TJU_MultiNLP_ReadingGroup
