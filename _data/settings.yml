@@ -20,7 +20,7 @@ menu:
   - name: Resource
     link: /resource
   - name: Events
-    link: /events/
+    link: /events
   - name: Contact
     submenu:
       - name: Reading Group
