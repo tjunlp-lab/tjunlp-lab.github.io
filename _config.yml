@@ -34,9 +34,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
 include: ["_pages"]
-permalink: /posts/:title/
+permalink: /pages/introduction/
 excerpt_separator: <!--more-->
-author: https://multinlp-tju.github.io/
+author: https://multinlp-tju.github.io/introduction
 
 host: 0.0.0.0
 
