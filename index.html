@@ -1,68 +1,68 @@
---- 
-layout: default 
+---
+layout: default
 title: TJUNLP实验室，长期专注于自然语言处理领域
-description: A Reasearch Group that focus on Natural Language Processing.
-comments: true 
+permalink: /introduction/
 ---
 
-<!-- Pagination links -->
-<div >
-	{% if paginator.previous_page %}
-		<a href="{{ paginator.previous_page_path }}" >
-		Previous
-		</a>
-	{% else %}
-		<span>Previous</span>
-	{% endif %}
-	| <span class="page_number ">
-		Page: {{ paginator.page }} of {{ paginator.total_pages }}
-	</span> | 
-	{% if paginator.next_page %}
-		<a href="{{ paginator.next_page_path }}" >Next</a>
-	{% else %}
-		<span >Next</span>
-	{% endif %}
-</div>
 
-<div class="list-group">
-	{% for post in paginator.posts %} 
-	<div class="list-group-item">
-	<a href="{{ post.url }}">
-		<h4 class="list-group-item-heading">{{ post.title }}</h4>
-		<h6 class="list-group-item-heading">{{ post.published | date: '%B %d,
-			%Y' }} | (Last Update : {{ post.date | date: '%B %d, %Y' }})</h6></a>
-		{% for tag in post.tags %}
-		<a class="label label-default" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
-		{% endfor %}
-		{% if post.noimage %}
-		{% else %}		
-		<img
-			alt="{{ post.title }}"
-			src="/assets/images/{{post.id}}/top.jpg" class="img-responsive">
-		{% endif %}
-		<p>{{ post.excerpt | strip_html}}</p>
-		<a href="{{ post.url }}">Read more...</a>
-
-	</div>
-	{% endfor %}
+<font face="verdana" size="6" color="MediumSeaGreen">实验室课题</font>
+<hr />
+<p>
+	科学技术高速发展的今天，以人工智能为代表的高新技术正在深刻革新社会中的各行各业，自然语言处理作为计算机应用研究中最热门的领域之一，以其实用性和研究的复杂性被誉为“人工智能皇冠上的明珠”。
+</p>
+<p>
+	在<a href="https://multinlp-tju.github.io/members/mentor/">熊德意</a>教授的带领下，TJUNLP实验室从成立至今，多角度、多模态地深耕于自然语言处理领域，分别在
+	<a href="https://multinlp-tju.github.io/posts/machine-translation/">机器翻译（machine translation）[link]</a>、
+	<a href="https://multinlp-tju.github.io/posts/question-answering/">问答系统（question answering）[link]</a>、
+	<a href="https://multinlp-tju.github.io/posts/dialogue/">对话（dialogue）[link]</a>、
+	<a href="https://multinlp-tju.github.io/posts/machine-translation/">语言生成（question generation）[link]</a>
+	等方向进行研究，拥有扎实的科研基础，并在该领域积累了丰富的阶段性成果，在自然语言处理领域顶级会议发表大量优秀论文。
+</p>
+<div class="caption">
+	<center>实验室研究课题画像</center>	
 </div>
+<img class="center-block img-responsive"
+	src="/assets/images/NLP.jpg"
+	alt="NLP"/>
 
-<!-- Pagination links -->
-<div >
-{% if paginator.previous_page %}
-	<a href="{{ paginator.previous_page_path }}" >
-	Previous
-	</a>
-{% else %}
-	<span>Previous</span>
-{% endif %}
-| <span class="page_number ">
-	Page: {{ paginator.page }} of {{ paginator.total_pages }}
-</span> | 
-{% if paginator.next_page %}
-	<a href="{{ paginator.next_page_path }}" >Next</a>
-{% else %}
-	<span >Next</span>
-{% endif %}
-</div>
-	  
+
+
+<br><font face="verdana" size="6" color="MediumSeaGreen">实验室目标</font>
+<hr />
+<p>
+	实验室积极营造浓厚科研氛围，在与各种团体的交流、学习中不断发展。我们曾与爱丁堡大学、联想控股有限公司、oppo等多家研究机构进行项目合作与交流工作，在进行基础研究的同时，努力将科研成果转化为生产力。 
+</p>
+
+<p>
+	实验室建立了各项规章管理制度，在经费运作、办公场地、人才引进、评价机制、学术活动、国内外协作等方面有一套高效的运行体系，使得学生和相关研究人员把精力集中在科学研究和实验室发展上，期望早日实现本实验室的战略目标：<strong>在自然语言处理领域前瞻性和原创性探索方面产生一定的国际影响，在研究与开发方面不断取得进展，在关键技术与系统的应用与产业化促进方面取得实际成效，从而把本实验室建设成为世界一流的自然语言处理实验室，为我国在国际自然语言处理领域占有一席之地做出贡献，为我国人工智能的跨越式发展发挥积极的促进作用。</strong>
+</p>
+
+
+
+
+
+
+<br><font face="verdana" size="6" color="MediumSeaGreen">欢迎加入</font>
+<hr />
+<p>
+	 TJUNLP实验室为对人工智能自然语言处理方向有着浓厚兴趣的优秀学生提供科研环境和平台，由衷欢迎优秀的本科生、硕士生、博士生加入本实验室！如果你具有以下，都将被视为加分项：
+	 <ul>
+        <li>出色的代码能力</li>
+	 	<li>扎实的数理基础</li>
+        <li>对DL、NLP、CV某个方向有深入的思考和见解</li>
+	 	<li>具有自然语言处理相关的科研背景</li>
+	 </ul>
+</p>
+
+
+
+
+<br><font face="verdana" size="6" color="MediumSeaGreen">联系方式</font>
+<hr />
+<p>
+	电话： 86 + 00000000000<br>
+	邮箱： <a href="multinlp@163.com">multinlp@163.com</a><br>
+	Github：<a href="https://github.com/multinlp-tju">multinlp-tju</a><br>
+	地址： 天津大学北洋园校区55教学楼B105<br>
+	邮编： 300350
+</p>
