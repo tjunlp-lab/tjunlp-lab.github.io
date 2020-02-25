@@ -11,9 +11,9 @@
 				<a class="navbar-brand" href="/"> <i class="fa fa-barcode"></i>
 				</a>
 			</div>
+
 			<div id="navbar-collapse-menu" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-
 					{% for item in site.data.settings.menu %}
 						<!-- If has submenues -->
 						{% if item.submenu %}
@@ -41,27 +41,27 @@
 					{% endfor %}
 				</ul>
 			</div>
-		</div>
 
-		<!-- github logo -->
-		<ul class="footer-links">
-			<li>
-				<a href="http://github.com/multinlp-tju"> <i 
-					class="fa fa-github-inverse fa-github fa-2x"></i>
-				</a>
-			</li>
-		</ul>
+			<!-- github logo -->
+			<ul class="footer-links">
+				<li>
+					<a href="http://github.com/multinlp-tju"> <i 
+						class="fa fa-github fa-github fa-2x"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
 	</nav>
 
 
 	<!-- TJULAB title and green background -->
 
-		{% if page.noimage %}
-		{% else %}
-		<img
-			alt="{{ page.title }}"
-			src="/assets/images/{{page.id}}/top.jpg" class="img-responsive">
-		{% endif %}
+	{% if page.noimage %}
+	{% else %}
+	<img
+		alt="{{ page.title }}"
+		src="/assets/images/{{page.id}}/top.jpg" class="img-responsive">
+	{% endif %}
 
 	<div class="jumbotron  clearfix">
 		<h1 class="text-center">{{ page.title }}</h1>
