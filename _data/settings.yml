@@ -1,0 +1,37 @@
+# Change 'comments' to true for Disqus comments
+disqus:
+  comments: true
+  disqus_shortname: 'apham'
+
+# If you are not using Google Analytics, please change 'google-ID' to an empty string
+google-ID: ''
+
+menu:
+  - name: Home
+    link: https://multinlp-tju.github.io
+  - name: People
+    submenu:
+      - name: Mentor
+        link: /members/mentor
+      - name: Students
+        link: /members/students
+  - name: Publications
+    link: /publications
+  - name: Resource
+    link: /resource
+  - name: Events
+    link: /events
+  - name: Contact
+    submenu:
+      - name: Reading Group
+        link: https://github.com/multinlp-tju/TJU_MultiNLP_ReadingGroup
+      - name: GitHub
+        icon: github
+        link: https://github.com/multinlp-tju
+      - name: LinkedIn
+        icon: linkedin-square
+        link: https://github.com/multinlp-tju
+      - name: Twitter
+        icon: twitter
+        link: https://github.com/multinlp-tju
+    

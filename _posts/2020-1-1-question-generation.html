@@ -1,0 +1,35 @@
+---
+layout: default
+title:  "Question Generation"
+date:   2020-1-1 09:00:00 +0200
+published: 2020-1-1 09:00:00 +0200
+categories: question-generation
+tags: [question-generation]
+---
+
+
+<h1>
+    Question Generation
+</h1>
+
+<br><font size="6">简介</font>
+<hr />
+<p>
+    问题生成(question generation)可以创建大量的question-answer对，这为阅读理解相关任务提供额外的数据集。同时，问题生成本身也可以为医疗诊断系统、家庭教育系统等提供服务。问题生成任务的输入通常包含文档（或句子）和答案，输出是在给定文档和对应答案的情况下，生成最有可能的问题。
+</p>
+
+<!--more-->
+<br><font size="6">近两年我们相关的进展</font>
+<HR style="FILTER: alpha(opacity=0,finishopacity=100,style=1)" width="85%" color=#987cb9 SIZE=10>
+EMNLP 2019 Qiu, Jiazuo, Xiong, Deyi. Generating Highly Relevant Questions.<br>
+<p>
+    问题生成常用的模型是以seq2seq为核心的，并且带有attention机制和copy机制。模型输入包括文档（或句子）和答案，答案与文档相结合通常有两种方法：
+    <ul>
+        <li>Attention机制与机器翻译中的attention类似，本质是一种对齐手段，做法是对源端隐层和目标端隐层计算attention分数，正则化以后与源端隐层加权求和得到context vector，带入到目标端单词的生成中。Copy机制则是用于处理OOV的情况，通常而言，词典只包含数据集中出现一定频率的词，而不收录那些低频词（例如只出现一次），因此如果没有copy机制通常会造成某个输出词是[UNK]的情况。为了处理这种情况，copy机制用来去从输入文档中选择单词作为目标端的输出单词，为了合理控制copy和generate的平衡，通常会采用门控机制。</li>
+        <li>另一个方案则是将答案输入一个单独的encoder，然后将两个encoder的结果进行融合，这种方案关键在于融合方法是否能够表达足够多的信息，此外这种方案能应用于“答案不在文档中”的数据集中。</li>
+    </ul>
+    为了提高模型性能，通常还会在输入端增加一些语义特征，例如词性标注、命名实体识别、指代消解等。
+</p>
+
+
+
