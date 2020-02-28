@@ -3,66 +3,62 @@ layout: default
 title: TJUNLP实验室，长期专注于自然语言处理领域
 ---
 
-<!-- TAG part -->
+<!-- TAG部分 -->
 {% comment%}
-Here we generate all the tags.
+	Here we generate all the tags.
 {% endcomment%}
-
 {% assign rawtags = "" %}
 {% for post in site.posts %}
-{% assign ttags = post.tags | join:'|' | append:'|' %}
-{% assign rawtags = rawtags | append:ttags %}
+	{% assign ttags = post.tags | join:'|' | append:'|' %}
+	{% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
-
 {% assign rawtags = rawtags | split:'|' | sort %}
-
 {% assign tags = "" %}
-
 {% for tag in rawtags %}
-{% if tag != "" %}
-
-{% if tags == "" %}
-{% assign tags = tag | split:'|' %}
-{% endif %}
-
-{% unless tags contains tag %}
-{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
-{% endunless %}
-{% endif %}
+	{% if tag != "" %}
+		{% if tags == "" %}
+			{% assign tags = tag | split:'|' %}
+		{% endif %}
+		{% unless tags contains tag %}
+			{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+		{% endunless %}
+	{% endif %}
 {% endfor %}
 <!-- draw tags -->
 {% for tag in tags %}
-<a class="label label-success" href="#{{ tag | slugify }}" > {{ tag }} </a> &nbsp;
+	<a class="label label-success" href="#{{ tag | slugify }}" > {{ tag }} </a> &nbsp;
 {% endfor %}
-<br />
-<br />
+<br /><br />
 
 
 <!-- introduction part -->
-<font face="verdana" size="6" color=#719d7d>实验室课题</font>
-<hr />
-<p>
+<font face="verdana" size="6" color= #309657><strong>实验室课题</strong></font>
+<hr style="margin-top:-4px;height:1px;border:none;border-top:1px dotted #309657;" />
+</p>
 	科学技术高速发展的今天，以人工智能为代表的高新技术正在深刻革新社会中的各行各业，自然语言处理作为计算机应用研究中最热门的领域之一，以其实用性和研究的复杂性被誉为“人工智能皇冠上的明珠”。
 </p>
-<p>
-	在<a href="/members/faculty">熊德意</a>教授的带领下，TJUNLP实验室从成立至今，多角度、多模态地深耕于自然语言处理领域，分别在
-	<a href="/posts/machine-translation/">机器翻译（machine translation）[link]</a>、
-	<a href="/posts/question-answering/">问答系统（question answering）[link]</a>、
-	<a href="/posts/dialogue/">对话（dialogue）[link]</a>、
-	<a href="/posts/machine-translation/">语言生成（question generation）[link]</a>
-	等方向进行研究，拥有扎实的科研基础，并在该领域积累了丰富的阶段性成果，在自然语言处理领域顶级会议发表大量优秀论文。
-</p>
-<div class="caption">
-	<center>实验室研究课题画像</center>	
-</div>
 <img class="center-block img-responsive"
 	src="/assets/images/NLP.jpg"
 	alt="NLP"/>
+	<div class="caption">
+			<center>TJUNLP研究课题画像</center>	
+	</div>
+<p>
+	在<a href="/members/faculty">熊德意</a>教授的带领下，TJUNLP实验室从成立至今，多角度、多模态地深耕于自然语言处理领域，分别在
+	<ul>
+		<li><a href="/posts/machine-translation/">机器翻译（machine translation）[link]</a></li>
+		<li><a href="/posts/question-answering/">问答系统（question answering）[link]</a></li>
+		<li><a href="/posts/dialogue/">对话（dialogue）[link]</a></li>
+		<li><a href="/posts/machine-translation/">语言生成（question generation）[link]</a></li>
+	</ul>
+	等方向进行研究，拥有扎实的科研基础，并在该领域积累了丰富的阶段性成果，在自然语言处理领域顶级会议发表大量优秀论文。
+</p>
 
 
 
-<br><font face="verdana" size="6" color=#719d7d>实验室目标</font>
-<hr />
+<br><font face="verdana" size="6" color= #309657><strong>实验室目标</strong></font>
+<hr style="margin-top:-4px;height:1px;border:none;border-top:1px dotted #309657;" />
+
 <p>
 	实验室积极营造浓厚科研氛围，在与各种团体的交流、学习中不断发展。长期与爱丁堡大学、联想控股有限公司、oppo等多家研究机构进行项目合作与交流工作，在进行基础研究的同时，努力将科研成果转化为生产力。 
 </p>
@@ -75,9 +71,8 @@ Here we generate all the tags.
 
 
 
-
-<br><font face="verdana" size="6" color=#719d7d>欢迎加入</font>
-<hr />
+<br><font face="verdana" size="6" color= #309657><strong>欢迎加入</strong></font>
+<hr style="margin-top:-4px;height:1px;border:none;border-top:1px dotted #309657;" />
 <p>
 	 TJUNLP实验室为对人工智能自然语言处理方向有着浓厚兴趣的优秀学生提供科研环境和平台，由衷欢迎优秀的本科生、硕士生、博士生加入本实验室！以下任一项均被视为加分项：
 	 <ul>
@@ -90,11 +85,9 @@ Here we generate all the tags.
 
 
 
-
-<br><font face="verdana" size="6" color=#719d7d>联系方式</font>
-<hr />
-<p>
-	电话： 86 + 00000000000<br>
+<br><font face="verdana" size="6" color= #309657><strong>联系方式</strong></font>
+<hr style="margin-top:-4px;height:1px;border:none;border-top:1px dotted #309657;" /><p>
+	电话： 86+18959212783<br>
 	邮箱： <a href="multinlp@163.com">multinlp@163.com</a><br>
 	Github：<a href="https://github.com/multinlp-tju">multinlp-tju</a><br>
 	地址： 天津大学北洋园校区55教学楼B115<br>

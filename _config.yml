@@ -37,6 +37,5 @@ include: ["_pages"]
 permalink:  /posts/:title/ 
 excerpt_separator: <!--more-->
 author: https://multinlp-tju.github.io
-
 host: 0.0.0.0
 

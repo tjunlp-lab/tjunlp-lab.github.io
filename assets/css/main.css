@@ -35,15 +35,18 @@ h3:before {
 /* 中间绿色的背景色 */
 .jumbotron {
 	background: #719d7d;
+	margin-bottom: 0em;
+	padding-top: 0em;
+	min-height: 0em;
+	max-height: 0em;
 }
-
+/* 中间绿色的字体 */
 .jumbotron h1 {
 	color: white;
 	letter-spacing: 0.2em;
-	font-size: 3em;
+	font-size: 2em;
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: 0.2em;
 }
 
 .footer {
