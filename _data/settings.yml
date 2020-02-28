@@ -8,7 +8,7 @@ google-ID: ''
 
 menu:
   - name: Home
-    link: https://multinlp-tju.github.io
+    link: index
   - name: People
     submenu:
       - name: Mentor

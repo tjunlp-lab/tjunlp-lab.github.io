@@ -17,7 +17,7 @@ title: TJUNLP Lab
 name: TJUNLP Lab
 description: 
   This is home of TJUNLP Lab of Tianjin University, China 
-baseurl: "/introduction" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 github_username:  multinlp-tju
 
 # jekyll-paginate configuration
