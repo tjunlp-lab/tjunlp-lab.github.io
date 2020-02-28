@@ -1,56 +1,72 @@
 <!doctype html>
 <html lang="en">
+
+<!-- 菜单栏 -->
 {% include head.html %}
-<body>
-	{% include header.html %}
+
+<!-- 菜单栏背景色 -->
+{% include header.html %}
+
+<body>	
 	<div class="container">
+		<!-- 如果是文章,文章头部 -->
+		{% if page.id %}
+			<!-- 文章头 -->
+			<p>
+				<strong>{{ page.published | date: '%B %d, %Y' }}</strong> ( last updated : {{ page.date | date: '%B %d, %Y' }} )
+				<br>
+				{% for tag in page.tags %}
+					<a class="label label-default" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+				{% endfor %}
+			</p>
+			<!-- 文章标题前面的github图标链接 -->
+			{%if page.github %}
+				<p>
+					<a href="{{ page.github }}" class="btn btn-default">
+						<i class="fa fa-github fa-2x"></i>  
+						<!-- {{ page.github }} -->
+					</a>
+				</p>
+			{% endif %}
+			<hr>
+		{% endif %}
 
-	{% if page.id %}
-	<p>
-		<strong>{{ page.published | date: '%B %d, %Y' }}</strong> ( last updated : {{ page.date | date: '%B %d, %Y' }} )
-		<br>
-		{% for tag in page.tags %}
-			<a class="label label-default" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
-		{% endfor %}
-    </p>
-	{%if page.github %}
-	<p>
-    	<a href="{{ page.github }}" class="btn btn-default">
-		    <i class="fa fa-github fa-2x"></i>  {{ page.github }}
-			</a>
-	</p>
-	{% endif %}
-	<hr>
-	{% endif %}
-
-	{{ content }}
+		<!-- 页面内容 -->
+		{{ content }}
 
 
-	{% if page.id %}
-	<br>
-	<p> Originally published {{ page.published | date: '%B %d, %Y' }}
-    <br> Latest update {{ page.date | date: '%B %d, %Y' }}</p>
-
-    <p><strong>Related posts :</strong></p>
-        <ul>
-	    {% for allpost in site.posts %}
-			  {% for tag in page.tags %}
-			  {% if allpost.tags contains tag and allpost.id != page.id %}
-			  <li>
-			      <a href="{{ allpost.url }}">
-			        {{ allpost.title }}
-			      </a>
-			  </li>
-			  {% break %}
-			  {% endif %}
-			  {% endfor %}
-		{% endfor %}
-		</ul>
-	{% endif %}
-
-	{% include disqus.html %}
+		<!-- 如果是文章 -->
+		{% if page.id %}
+			<hr />
+			<!-- 打印所有相关的posts -->
+			<p><strong>Related posts :</strong></p>
+			<ul>
+				{% for allpost in site.posts %}
+					<!-- 搜索1篇文章的所有tag -->
+					{% for tag in page.tags %}
+						{% if allpost.tags contains tag and allpost.id != page.id %}
+							<li><a href="{{ allpost.url }}">{{ allpost.title }}</a></li>
+							{% break %}
+						{% endif %}
+					{% endfor %}
+				{% endfor %}
+			</ul>
+			<br>
+		{% endif %}
 	</div>
+
+	<!-- 评论 -->
+	<!-- {% if page.id %}
+		<div class="container"></div>
+			{% include disqus.html %}
+		<br>
+		</div>
+	{% endif %} -->
+
+
+	<!-- 底部脚注 -->
 	{% include footer.html %}
 	{% include analytics.html %}
 </body>
+
 </html>

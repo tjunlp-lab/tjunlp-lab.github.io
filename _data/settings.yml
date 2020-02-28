@@ -8,11 +8,11 @@ google-ID: ''
 
 menu:
   - name: Home
-    link: index
+    link: /
   - name: People
     submenu:
-      - name: Mentor
-        link: /members/mentor
+      - name: faculty
+        link: /members/faculty
       - name: Students
         link: /members/students
   - name: Publications
@@ -22,16 +22,6 @@ menu:
   - name: Events
     link: /events
   - name: Contact
-    submenu:
-      - name: Reading Group
-        link: https://github.com/multinlp-tju/TJU_MultiNLP_ReadingGroup
-      - name: GitHub
-        icon: github
-        link: https://github.com/multinlp-tju
-      - name: LinkedIn
-        icon: linkedin-square
-        link: https://github.com/multinlp-tju
-      - name: Twitter
-        icon: twitter
-        link: https://github.com/multinlp-tju
+    link: /contact
+
     
