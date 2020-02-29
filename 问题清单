@@ -1,0 +1,14 @@
+一：如何解决分页部件paginator只能在根目录的index中使用，在别的子目录中无法使用
+https://stackoverflow.com/questions/24717458/creating-a-website-with-jekyll-that-has-a-subdirectory-for-the-blog-with-paginat/24721117?r=SearchResults#24721117
+修改的地方包括：
+1. header中对logo的链接位置
+2. _config.yml中的分页path
+3. 新的子页面名称也必须是index.html，但是要设置在config.yml中定义的文件夹里
+4. 每次设置不会马上生效，必须重启jekyll才会生效
+5. 如果多个子页面都想要用paginator功能，
+   那可以把paginate_path对应的"/_pages/postlist/page:num"下新建page1 page2 page3,再分别新建index.html
+   或者直接在postlist新建index.html也是可以的。
+
+
+二.控制posts显示的简介的长度
+在文章中某处加<!--more-->，则简介只显示之前的部分
