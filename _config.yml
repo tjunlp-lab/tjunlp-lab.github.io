@@ -21,7 +21,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 github_username:  multinlp-tju
 
 # jekyll-paginate configuration
-paginate: 10
+paginate: 4
+paginate_path: "/_pages/postlist/page:num"
 
 # Build settings
 markdown: kramdown
@@ -38,4 +39,3 @@ permalink:  /posts/:title/
 excerpt_separator: <!--more-->
 author: https://multinlp-tju.github.io
 host: 0.0.0.0
-

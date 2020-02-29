@@ -33,7 +33,7 @@
 
 		<!-- 页面内容 -->
 		{{ content }}
-
+		<br>
 
 		<!-- 如果是文章 -->
 		{% if page.id %}
@@ -56,13 +56,12 @@
 	</div>
 
 	<!-- 评论 -->
-	<!-- {% if page.id %}
+	{% if page.id %}
 		<div class="container"></div>
 			{% include disqus.html %}
 		<br>
 		</div>
-	{% endif %} -->
-
+	{% endif %}
 
 	<!-- 底部脚注 -->
 	{% include footer.html %}
