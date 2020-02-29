@@ -5,7 +5,7 @@ title: TJUNLP实验室，长期专注于自然语言处理领域
 
 
 <!-- TAG部分 -->
-{% comment%}
+<!-- {% comment%}
 	Here we generate all the tags.
 {% endcomment%}
 {% assign rawtags = "" %}
@@ -24,12 +24,12 @@ title: TJUNLP实验室，长期专注于自然语言处理领域
 			{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
 		{% endunless %}
 	{% endif %}
-{% endfor %}
+{% endfor %} -->
 <!-- draw tags -->
-{% for tag in tags %}
+<!-- {% for tag in tags %}
 	<a class="label label-success" href="#{{ tag | slugify }}" > {{ tag }} </a> &nbsp;
 {% endfor %}
-<br /><br />
+<br /><br /> -->
 
 
 
@@ -44,105 +44,70 @@ title: TJUNLP实验室，长期专注于自然语言处理领域
 
 
 
-<font face="verdana" size="6" color= #309657><strong>实验室课题</strong></font>
-<hr style="margin-top:-4px;height:1px;border:none;border-top:1px dotted #309657;" />
-<!-- 靠右对齐的无边框研究框架图 -->
-<div class="col-md-3" border=0 style="float:right;">		
-	<!-- <div class="thumbnail"> 如果不注释掉thumbnail，就相当于缩略图容器装着图片，看起来就是有边框的效果--> 
-	<!-- 为了字母和图像在col中居中 -->
-	<center>
-		<img
-			src="/assets/images/研究框架图.png"
-			width=100%
-			alt="NLP"/>
-		<div class="caption">
-			<center>实验室研究框架</center>
-		</div>
-	</center>
-	<!-- </div> -->
-</div>
+<font face="verdana" size="6" color= #5a73ee><strong>实验室简介</strong></font>
+<hr style="margin-top:-4px;height:1px;border:none;border-top:1px dotted #5a73ee;" />
+<p style="text-align:justify; text-justify:inter-ideograph">
+	<!-- 靠右对齐的无边框研究框架图 -->
+	<div class="col-md-3" border=0 style="float:right;">		
+		<!-- <div class="thumbnail"> 如果不注释掉thumbnail，就相当于缩略图容器装着图片，看起来就是有边框的效果--> 
+		<!-- 为了字母和图像在col中居中 -->
+		<center>
+			<img
+				src="/assets/images/研究框架图.png"
+				width=115%
+				alt="NLP"/>
+			<div class="caption">
+				<center>实验室研究框架</center>
+			</div>
+		</center>
+		<!-- </div> -->
+	</div>
 </p>
-	科学技术高速发展的今天，以人工智能为代表的高新技术正在深刻革新社会中的各行各业，自然语言处理作为计算机应用研究中最热门的领域之一，以其实用性和研究的复杂性被誉为“人工智能皇冠上的明珠”。
-	<br>
-	在<a href="/members/faculty">熊德意</a>教授的带领下，TJUNLP实验室从成立至今，多角度、多模态地深耕于自然语言处理领域，专注于
-	<ul>
-		<li><a href="/posts/machine-translation/">机器翻译（machine translation）[link]</a></li>
-		<li><a href="/posts/question-answering/">问答系统（question answering）[link]</a></li>
-		<li><a href="/posts/dialogue/">对话（dialogue）[link]</a></li>
-		<li><a href="/posts/machine-translation/">语言生成（question generation）[link]</a></li>
-	</ul>
-	等方向进行深入研究，以赋予计算机“说、读、写、译”语言功能。
-	另外在
-	<ul>
-		<li>常识推理和挖掘</li>
-		<li>篇章计算</li>
-	</ul>
-	等方面开展探索性研究。实验室积极营造浓厚科研氛围，在与各种团体的交流、学习中不断发展。
-	长期与爱丁堡大学、联想控股有限公司、oppo等多家研究机构进行项目合作与交流工作，在进行基础研究的同时，努力将科研成果转化为生产力。
-	实验室拥有扎实的科研基础，逐步形成成熟的研究框架，并在该领域积累了丰富的阶段性成果，在自然语言处理领域顶级会议发表大量优秀论文。
+
+<p style="text-align:justify; text-justify:inter-ideograph">
+	<p style="text-align:justify; text-justify:inter-ideograph">
+		人工智能技术正在社会各行各业中发挥越来越重要的作用，自然语言处理，作为人工智能的一个重要分支，被广泛誉为“人工智能皇冠上的明珠”，具有重要的科学研究和实际应用价值。
+	</p>
+	<p style="text-align:justify; text-justify:inter-ideograph">
+		天津大学自然语言处理实验室（TJUNLP）成立之初就扎根于自然语言处理技术的研究，主要研究方向包括：
+		<ul>
+			<li><a href="/posts/machine-translation/">机器翻译（machine translation）</a></li>
+			<li><a href="/posts/question-answering/">问答系统（question answering）</a></li>
+			<li><a href="/posts/dialogue/">对话（dialogue）</a></li>
+			<li><a href="/posts/machine-translation/">语言生成（question generation）</a></li>
+		</ul>
+		等方向进行深入研究，以赋予计算机“说、读、写、译”语言功能。
+		除此之外，TJUNLP还在常识推理和挖掘以及篇章计算方面开展前瞻性研究。
+	</p>	
+	<p style="text-align:justify; text-justify:inter-ideograph">
+		TJUNLP具有良好的科研氛围、充足的科研经费，目前已与世界上多个知名大学自然语言实验室开展深入合作，
+		包括英国爱丁堡大学、葡萄牙里斯本大学、西班牙巴斯克大学等，与国内外多家企业开展了联合研究与技术攻关，
+		如华为、联想、OPPO、今日头条等。实验室常年接受海内外学生实习和访问交流，
+		同时选送优秀学生赴国外大学和国内知名企业实习与交流合作。
+	</p>
 </p>
 <br>
 
 
-
-
-<font face="verdana" size="6" color= #309657><strong>代表性成果</strong></font>
-<hr style="margin-top:-4px;height:1px;border:none;border-top:1px dotted #309657;" />
-<p>
-	发表论文100余篇，其中CCF A/B类国际会议（ACL、AAAI等）和期刊论文（AI、 IEEE TPAMI等）50余篇，Springer出版英文专著1部。
-</p>
-<p>
-	团队提出了多种机器翻译、对话和机器阅读理解模型与算法，研发了20余种“一带一路”语言到汉语的机器翻译平台，构建了金融、法律、工业领域的文本语义分析系统，百亿语料规模的医学领域机器辅助写作系统，多领域机器阅读理解和智能问答系统等。多项成果在工业界和国家相关部门获得部署和广泛应用。
-</p>
-<p>
-	团队主持和参与了多项国家级项目和国际合作项目，包括自然科学基金重点项目、优青项目、英国皇家学会牛顿高级学者基金项目、科技部政府间国际科技创新合作重点专项、科技部重点研发计划项目等，获得北京市科学技术二等奖、钱伟长中文信息处理科学技术奖等奖项。与多家国际知名自然语言处理实验室和多家国内外知名企业保持密切合作关系。
-</p>
-
-
-
-
-
-<br><font face="verdana" size="6" color= #309657><strong>实验室目标</strong></font>
-<hr style="margin-top:-4px;height:1px;border:none;border-top:1px dotted #309657;" />
-<p>
-	<img class="center-block img-responsive"
-		width=50%
-		src="/assets/images/研究兴趣.png"
-		alt="研究目标"/>
-	实验室建立了各项规章管理制度，在经费运作、办公场地、人才引进、评价机制、学术活动、国内外协作等方面有一套高效的运行体系，
-	使得学生和相关研究人员把精力集中在科学研究和实验室发展上，期望早日实现本实验室的战略目标：
-	<strong>
-		专注于研究自然与语言理解和自然语言生成，使得计算机具备“听说读写”语言功能。
-		在自然语言处理领域前瞻性和原创性探索方面产生一定的国际影响，在研究与开发方面不断取得进展，
-		在关键技术与系统的应用与产业化促进方面取得实际成效，从而把本实验室建设成为世界一流的自然语言处理实验室，
-		为我国在国际自然语言处理领域占有一席之地做出贡献，为我国人工智能的跨越式发展发挥积极的促进作用。
-	</strong>
-</p>
-
-
-
-
-
-<br><font face="verdana" size="6" color= #309657><strong>欢迎加入</strong></font>
-<hr style="margin-top:-4px;height:1px;border:none;border-top:1px dotted #309657;" />
-<p>
-	 TJUNLP实验室为对人工智能自然语言处理方向有着浓厚兴趣的优秀学生提供科研环境和平台，由衷欢迎优秀的本科生、硕士生、博士生加入本实验室！以下任一项均被视为加分项：
+<br><font face="verdana" size="6" color= #5a73ee><strong>欢迎加入</strong></font>
+<hr style="margin-top:-4px;height:1px;border:none;border-top:1px dotted #5a73ee;" />
+<p style="text-align:justify; text-justify:inter-ideograph">
+	TJUNLP竭诚欢迎任何对自然语言处理有浓厚兴趣的优秀本科生、硕士生、博士生加入实验室！在TJUNLP实验室，你将有机会打造或展现：
 	 <ul>
         <li>出色的代码能力</li>
 	 	<li>扎实的数理基础</li>
-        <li>对DL、NLP、CV某个方向有深入的思考和见解</li>
-	 	<li>具有自然语言处理相关的科研背景</li>
+        <li>优秀的自然语言处理、深度学习研究经验</li>
+	 	<li>犀利的问题洞察、分析和解决能力</li>
 	 </ul>
 </p>
 
 
 
-<br><font face="verdana" size="6" color= #309657><strong>联系方式</strong></font>
-<hr style="margin-top:-4px;height:1px;border:none;border-top:1px dotted #309657;" /><p>
+<br><font face="verdana" size="6" color= #5a73ee><strong>联系方式</strong></font>
+<hr style="margin-top:-4px;height:1px;border:none;border-top:1px dotted #5a73ee;" /><p>
 	电话： 86+18959212783<br>
 	邮箱： <a href="multinlp@163.com">multinlp@163.com</a><br>
-	Github：<a href="https://github.com/multinlp-tju">multinlp-tju</a><br>
-	地址： 天津大学北洋园校区55教学楼B115<br>
+	地址： 天津大学北洋园校区55教学楼<br>
 	邮编： 300350
 </p>
 <br />

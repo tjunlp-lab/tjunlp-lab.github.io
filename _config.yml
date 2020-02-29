@@ -21,7 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 github_username:  multinlp-tju
 
 # jekyll-paginate configuration
-paginate: 4
+paginate: 3
 paginate_path: "/_pages/postlist/page:num"
 
 # Build settings
