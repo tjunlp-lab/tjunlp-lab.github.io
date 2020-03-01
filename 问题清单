@@ -12,3 +12,14 @@ https://stackoverflow.com/questions/24717458/creating-a-website-with-jekyll-that
 
 二.控制posts显示的简介的长度
 在文章中某处加<!--more-->，则简介只显示之前的部分
+
+三. 连着上一行，连着下一行的下划线
+<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />				
+
+四. 图片放置位置移动
+<img class="img-responsive"
+    style="float:right;margin:4px 10px 0px 10px;"
+    src="/logo1.png"
+    width=11%
+/>
+

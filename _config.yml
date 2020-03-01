@@ -22,6 +22,7 @@ github_username:  multinlp-tju
 lab_telephone: 	86+00000000000
 lab_zipcode: "300350" 
 lab_address: 天津大学北洋园校区55教学楼
+lab_email: multinlp@163.com
 
 # jekyll-paginate configuration
 paginate: 3
