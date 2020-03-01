@@ -19,6 +19,9 @@ description:
   This is home of TJUNLP Lab of Tianjin University, China 
 baseurl: "" # the subpath of your site, e.g. /blog
 github_username:  multinlp-tju
+lab_telephone: 	86+00000000000
+lab_zipcode: "300350" 
+lab_address: 天津大学北洋园校区55教学楼
 
 # jekyll-paginate configuration
 paginate: 3
@@ -34,7 +37,7 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-include: ["_pages"]
+include: ["_pages","_pages/postlist"]
 permalink:  /posts/:title/ 
 excerpt_separator: <!--more-->
 author: https://multinlp-tju.github.io
