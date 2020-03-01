@@ -12,6 +12,7 @@
 		<!-- 如果是文章,文章头部 -->
 		{% if page.id %}
 			<!-- 文章头 -->
+			<font size="6" >{{ page.title }}</font>
 			<p>
 				<strong>{{ page.published | date: '%B %d, %Y' }}</strong> ( last updated : {{ page.date | date: '%B %d, %Y' }} )
 				<br>
