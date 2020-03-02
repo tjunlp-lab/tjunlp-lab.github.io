@@ -1,9 +1,9 @@
 <div>
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
-
 			<!-- Home左边的logo图标 -->
 			<div class="navbar-header" style="float:right;">
+				
 				<button class="navbar-toggle collapsed"
 					type="button"
 					data-toggle="collapse"
@@ -12,14 +12,13 @@
 					<span class="icon-bar"></span>
 				</button>
 				<!-- logo链接设置模式 -->
-				<a href="/_pages/postlist/">
-					<!-- <img class="navbar-brand" src="/logo.png" /> -->
+				<!-- <a href="/_pages/postlist/">
 					<img class="img-responsive"
 						style="float:right;margin:4px 10px 0px 10px;"
 						src="/logo1.png"
 						width=11%
 					/>
-				</a>
+				</a> -->
 
 				<!-- logo无链接设置模式 -->
 				<!-- <img class="navbar-brand" src="/logo.png" /> -->
@@ -61,9 +60,19 @@
 									<img class="navbar-header" src={{icon_png}} width=24>{{item.name}}
 								</a>
 							</li>
-							
+
 						{% endif %}
 					{% endfor %}
+					<li> </li>
+					<li> </li>
+					<li>
+						<a href="/_pages/postlist/" >
+							<img class="navbar-header"
+								style="float:right;" 
+								src="/logo1.png" width=24
+							>
+						</a>
+					</li>
 				</ul>
 			</div>
 			

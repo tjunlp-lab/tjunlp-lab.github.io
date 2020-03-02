@@ -1,3 +1,4 @@
+核心人物关键人物 边缘人物
 一：如何解决分页部件paginator只能在根目录的index中使用，在别的子目录中无法使用
 https://stackoverflow.com/questions/24717458/creating-a-website-with-jekyll-that-has-a-subdirectory-for-the-blog-with-paginat/24721117?r=SearchResults#24721117
 修改的地方包括：
