@@ -29,7 +29,31 @@
 			<!-- 菜单栏 -->
 			<div id="navbar-collapse-menu" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
+
+					<!-- logo链接设置 -->
+					<li style="margin-top:-15px;margin-bottom:1px; border:none;" >
+						<a href="/_pages/postlist/" >
+							<img
+								class="navbar-header"
+								src="/logo1.png"
+								width=50
+							>
+						</a>
+					</li>
+
+
+
+					<!-- 其他子页面链接设置 -->
 					{% for item in site.data.settings.menu %}
+
+						<!-- | -->
+						<li>
+							<a>
+								<font size="3" color=#bfcac3>|</font>
+							</a>
+						</li>
+
+						
 						<!-- get icon name -->
 						{% assign icon_png = '/assets/images/' | append: item.name | append:'.png'  %}
 
@@ -57,22 +81,13 @@
 						{% else %}							
 							<li>
 								<a href="{{item.link}}">
-									<img class="navbar-header" src={{icon_png}} width=24>{{item.name}}
+									<img class="navbar-header" src={{icon_png}} width=26>{{item.name}}
 								</a>
 							</li>
 
 						{% endif %}
 					{% endfor %}
-					<li> </li>
-					<li> </li>
-					<li>
-						<a href="/_pages/postlist/" >
-							<img class="navbar-header"
-								style="float:right;" 
-								src="/logo1.png" width=24
-							>
-						</a>
-					</li>
+
 				</ul>
 			</div>
 			

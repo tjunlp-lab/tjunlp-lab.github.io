@@ -1,26 +1,43 @@
-核心人物关键人物 边缘人物
-一：如何解决分页部件paginator只能在根目录的index中使用，在别的子目录中无法使用
-https://stackoverflow.com/questions/24717458/creating-a-website-with-jekyll-that-has-a-subdirectory-for-the-blog-with-paginat/24721117?r=SearchResults#24721117
-修改的地方包括：
-1. header中对logo的链接位置
-2. _config.yml中的分页path
-3. 新的子页面名称也必须是index.html，但是要设置在config.yml中定义的文件夹里
-4. 每次设置不会马上生效，必须重启jekyll才会生效
-5. 如果多个子页面都想要用paginator功能，
-   那可以把paginate_path对应的"/_pages/postlist/page:num"下新建page1 page2 page3,再分别新建index.html
+网站的排版遇到的问题和解决方案：
+
+一：如何解决jekyll中，分页部件paginator只能在根目录的index.html中使用、在别的子目录中无法使用：
+参考链接：https://stackoverflow.com/questions/24717458/creating-a-website-with-jekyll-that-has-a-subdirectory-for-the-blog-with-paginat/24721117?r=SearchResults#24721117
+
+需要处理的内容包括：
+1. _config.yml中的分页地址 paginate_path
+2. 使用分页器的子页面名称必须同样是index.html，config.yml中要同时include对应的子目录文件夹
+3. 因为paginator的生成在网站初始化阶段，因此每次设置页面不会像其他页面改动以下立刻动态更新，必须重启jekyll server才会生效
+4. 如果多个子页面都想要用paginator功能，
+   假设我们新的子页面脚本想放在/_pages/postlist/文件夹里，
+   可以把paginate_path对应的"/_pages/postlist/page:num"下新建page1、page2、page3文件夹，再每个子目录分别新建index.html
    或者直接在postlist新建index.html也是可以的。
 
 
-二.控制posts显示的简介的长度
-在文章中某处加<!--more-->，则简介只显示之前的部分
 
-三. 连着上一行，连着下一行的下划线
-<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />				
+四. 怎么添加新的报道（posts）？
+1. 2种流程：
+（1）html脚本（建议html形式，因为排版脚本基本是按照html的css样式写的）
+在posts文件夹新建html文件，仿照之前的posts，设置好title等信息，再开始写正文。
 
-四. 图片放置位置移动
-<img class="img-responsive"
-    style="float:right;margin:4px 10px 0px 10px;"
-    src="/logo1.png"
-    width=11%
-/>
+（2）markdown脚本（可选）
+在posts文件夹新建md文件，仿照之前的posts，设置好title等信息，再开始写正文。
+正文可以在线下markdown编辑器写完转换为代码，再插入到指定位置。
 
+2. 注意事项：
+为保持网站呈现的页面统一性和方便后续维护，需要大家统一按照以下要求来进行：
+（1）. 图像：图像资源统一放在/assets/images/posts/新post的名字/文件夹中
+（2）. 图像：呈现图片，使用的链接要用相对位置，不要用绝对网址，可以减少网站的带宽压力;
+（3）. 资源：图片分辨率不要太高，否则网站加载很慢;
+（4）. 排版：注意排版整齐，保持两边对齐，每篇文章不要擅自用不同的新字体，保持网站的字体设置统一
+（5）. 在报道的标题和正文中，凡是提及某某教授，都不可以省略对教授的称呼，必须使用“全名+教授”
+（6）. 请统一post文件名的时间和脚本中开头两处时间
+（7）. 如果post中有规格合适的图片做封面（top.jpg，图片规格详见其他post的top.jpg），请将该封面命名为top.jpg;否则直接copy主页的top.jpg到该post的图像文件夹即可
+（8）. 如果是event类型的报道，需要手动在events.html页面添加对应报道链接。（如果维护的同学如果有空，可以写个自动更新events的页面。）
+（9）. 控制每篇报道的摘要显示情况，需要在post的代码中，紧接着摘要部分直接回车另起一行并键入  <!--more-->
+（10）. 如果不理解上面说的事项，只需要严格仿照以往的post脚本就清楚了。
+
+
+四. 网页排版里出现频率较多的样式
+1. 微调image位置：<img class="img-responsive" style="float:right;margin:4px 10px 0px 10px;" src="××.png"/>
+2. 紧贴上一行和下一行的下划线：<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />				
+3. 缩略图：<div class="thumbnail"></div>
