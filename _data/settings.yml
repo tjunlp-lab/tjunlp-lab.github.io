@@ -13,7 +13,7 @@ menu:
     submenu:
       - name: faculty
         link: /members/faculty
-      - name: Students
+      - name: Members
         link: /members/students
   - name: Publications
     link: /publications
