@@ -73,6 +73,36 @@ h3:before {
 	display: inline-block;
 }
 
+/* Fix footer alignment only for the students page */
+.students-page .footer {
+    position: relative; /* Change from absolute to relative */
+    text-align: left; /* Align content to the left */
+    margin-left: 0;
+    padding-left: 20px;
+    width: 100%; /* Ensure it spans the entire width */
+    background-color: black;
+    height: auto; /* Adjust height dynamically */
+}
+
+/* Ensure content inside the footer is aligned left */
+.students-page .footer-content {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Align footer text to the left */
+.students-page .footer-left,
+.students-page .footer-right {
+    text-align: left;
+}
+
+/* Align copyright text */
+.students-page .footer-bottom {
+    text-align: left;
+}
+
 .navbar-default {
 	background-color: black;
 	border-color: #12421f;
