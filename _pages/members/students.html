@@ -6,33 +6,76 @@ description: A member list sorted by name.
 ---
 
 <style>
-    /* Container to ensure no horizontal scroll */
-    .container-fluid {
+    /* Ensure no horizontal scrolling */
+    html, body {
         max-width: 100%;
         overflow-x: hidden;
     }
-    
+
+    /* Wrapper to contain everything */
+    .container-fluid {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    /* Flexbox for consistent row layout */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     /* Set up uniform size for all student entries */
     .student-entry {
-        width: 18%; /* Adjusted to fit 5 images per row */
+        width: 18%; /* Fits 5 images per row */
         display: inline-block;
-        vertical-align: top;
+        vertical-align: center;
         text-align: center;
         padding: 10px;
     }
-    
+
     /* Ensure all images are uniform */
     .student-entry img {
         width: 100%;
         height: auto;
         max-height: 150px; /* Maintain uniformity */
         object-fit: cover;
+        border-radius: 5px;
     }
-    
+
     /* Reduce caption text size */
     .caption {
         font-size: 12px;
-        text-align: center;
+        text-align: justify;
+        padding: 5px;
+    }
+
+    /* Responsive Design for smaller screens */
+    @media (max-width: 1200px) {
+        .student-entry {
+            width: 22%;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .student-entry {
+            width: 30%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .student-entry {
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .student-entry {
+            width: 90%;
+        }
     }
 </style>
 
@@ -161,7 +204,7 @@ description: A member list sorted by name.
 				<div class="caption">
 					<strong>Dan Shi</strong> <br>
 					<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />				
-					Knowledge Conflict Mitigation, Commonsense Reasoning of LLMs, LLM Evaluation and LLM Safety
+					LLM Agents,RAG, LLM Evaluation and Safety
 					<br><br>
 				</div>
 			</div>
@@ -559,7 +602,7 @@ description: A member list sorted by name.
 				<div class="caption">
 					<strong>Jianxiang Peng</strong>  <br>
 					<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />				
-					LLM-based Agent, Multi-Agent systems, Agent-based simulation of social behavior and Agent safety evaluation<br>
+					LLM Agents,Multiagent Systems,Agent-Based Modeling & Safety<br>
 					<br><br><br>
 				</div>
 			</div>
@@ -647,124 +690,107 @@ description: A member list sorted by name.
 	<font face="verdana" size="5" color= #309657><strong>- Alumni</strong></font>
 	<hr style="margin-top:-4px;height:1px;border:none;border-top:1px dotted #309657;" />
 	<div class="row">
-		<!--cxy-->
-		<div class="col-md-2">	
-			<div class="thumbnail">
-				<img
-					alt="cxy"
-					src="/assets/images/students/cxy.jpg" class="img-responsive">
-					<div class="caption">
-						<strong>Cai Xinyi</strong> <br>
-						<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />
-						Discourse Annotation & Discourse Phenomena
-						<br>Civil servant
-					</div>
-			</div>
-		</div>
-	
-		<!--LIU Chuang-->
-		<div class="col-md-2">
-			<div class="thumbnail">
-				<img
-					alt="LIU Chuang"
-					src="/assets/images/students/Dr.Liuchuang.png" class="img-responsive">
-					  <div class="caption">
-						<strong>Chuang Liu</strong> <br>
-						<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />					
-						LLM Evaluation
-						<br>Fresh PhD holder
-						<br><br>
-					  </div>
-			</div>
-	
-	
-		<!--dhc-->
-		<div class="col-md-2">
-			<div class="thumbnail">
-				<img
-					alt="dhc"
-					src="/assets/images/students/dhc.jpg" class="img-responsive">
-					  <div class="caption">
-						<strong>Deng Hancheng</strong> <br>
-						<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />					
-						Translation Quality Estimation
-						<br>Civil servant
-						<br><br>
-					  </div>
-			</div>
-		</div>
-	
-	
-		<!--hj-->
-		<div class="col-md-2">
-			<div class="thumbnail">
-					<img
-						alt="hj"
-						src="/assets/images/students/hj.jpg" class="img-responsive">
-				  <div class="caption">
-					<strong>He Jie</strong> <br>
-					<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />				
-					Commonsense Reasoning
-					<br>Studying at the University of Edinburgh
-					<br><br><br>
-				  </div>
-			</div>
-		</div>
-	
-	
-		<!--hww-->
-		<div class="col-md-2">
-			<div class="thumbnail">
-				<img
-					alt="hww"
-					src="/assets/images/students/hww.jpg" class="img-responsive">
-				  <div class="caption">
-					<strong>Huang Wuwei</strong> <br>
-					<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />				
-					Speech Translation
-					<br>Works at Xiaomi Corporation
-					<br><br><br>
-				  </div>
-			</div>
-		</div>
-	
-	
-		<!--lwq-->
-		<div class="col-md-2">
-			<div class="thumbnail">
-				<img
-					alt="lwq"
-					src="/assets/images/students/lwq.jpg" class="img-responsive">
-				<div class="caption">
-					<strong>Long Wanqiu</strong>  
-					<a href="https://github.com/wanqiulong0923"><i class="fa fa-github fa-github fa-1x"></i></a> <br>
-					<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />				
-					Discourse Relation, Discourse-level Translation
-					<br>Studying at the University of Edinburgh
-				</div>
-			</div>
-		</div>
-	
-	
-		<!--wdx-->
-		<div class="col-md-2">
-			<div class="thumbnail">
-				<img
-					alt="wdx"
-					src="/assets/images/students/wdx.jpg" class="img-responsive">
-				<div class="caption">
-					<strong>Wang Dexin</strong>
-					<a href="https://github.com/wonderseen"><i class="fa fa-github fa-github fa-1x"></i></a> <br>
-					<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />				
-					Vision & Language Reasoning
-					<br>Works at ByteDance Ltd.
-					<br><br>
-				</div>
-			</div>
-		</div>
-	
-	
-	</div>
+
+    <!-- Cai Xinyi -->
+    	<div class="col-md-2">    
+        	<div class="thumbnail">
+            	<img alt="cxy" src="/assets/images/students/cxy.jpg" class="img-responsive">
+            	<div class="caption">
+                	<strong>Cai Xinyi</strong> <br>
+                	<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />
+                	Discourse Annotation & Discourse Phenomena
+                	<br>Civil servant
+            	</div>
+        	</div>
+    	</div>
+
+    <!-- Liu Chuang -->
+    	<div class="col-md-2">
+        	<div class="thumbnail">
+            	<img alt="LIU Chuang" src="/assets/images/students/Dr.Liuchuang.png" class="img-responsive">
+            	<div class="caption">
+                	<strong>Chuang Liu</strong> <br>
+                	<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />                    
+                	LLM Evaluation
+                	<br>Fresh PhD holder
+                	<br><br>
+            	</div>
+        	</div>
+    	</div>
+
+    <!-- Deng Hancheng -->
+    	<div class="col-md-2">
+        	<div class="thumbnail">
+            	<img alt="dhc" src="/assets/images/students/dhc.jpg" class="img-responsive">
+            	<div class="caption">
+                	<strong>Deng Hancheng</strong> <br>
+                	<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />                    
+                	Translation Quality Estimation
+                	<br>Civil servant
+                	<br><br>
+            	</div>
+        	</div>
+    	</div>
+
+    <!-- He Jie -->
+    	<div class="col-md-2">
+        	<div class="thumbnail">
+            	<img alt="hj" src="/assets/images/students/hj.jpg" class="img-responsive">
+            	<div class="caption">
+                	<strong>He Jie</strong> <br>
+                	<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />                
+                	Commonsense Reasoning
+                	<br>Studying at the University of Edinburgh
+                	<br><br><br>
+            	</div>
+        	</div>
+    	</div>
+
+    <!-- Huang Wuwei -->
+    	<div class="col-md-2">
+        	<div class="thumbnail">
+            	<img alt="hww" src="/assets/images/students/hww.jpg" class="img-responsive">
+            	<div class="caption">
+                	<strong>Huang Wuwei</strong> <br>
+                	<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />                
+                	Speech Translation
+                	<br>Works at Xiaomi Corporation
+                	<br><br><br>
+            	</div>
+        	</div>
+    	</div>
+
+    <!-- Long Wanqiu -->
+    	<div class="col-md-2">
+        	<div class="thumbnail">
+            	<img alt="lwq" src="/assets/images/students/lwq.jpg" class="img-responsive">
+            	<div class="caption">
+                	<strong>Long Wanqiu</strong>  
+                	<a href="https://github.com/wanqiulong0923"><i class="fa fa-github fa-github fa-1x"></i></a> <br>
+                	<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />                
+                	Discourse Relation, Discourse-level Translation
+                	<br>Studying at the University of Edinburgh
+            	</div>
+        	</div>
+    	</div>
+
+    <!-- Wang Dexin -->
+    	<div class="col-md-2">
+        	<div class="thumbnail">
+            	<img alt="wdx" src="/assets/images/students/wdx.jpg" class="img-responsive">
+            	<div class="caption">
+                	<strong>Wang Dexin</strong>
+                	<a href="https://github.com/wonderseen"><i class="fa fa-github fa-github fa-1x"></i></a> <br>
+                	<hr style="margin-top:-1px;margin-bottom:1px; height:1px;border:none;border-top:1px dotted #a1a8a4;" />                
+                	Vision & Language Reasoning
+                	<br>Works at ByteDance Ltd.
+                	<br><br>
+            	</div>
+        	</div>
+    	</div>
+
+	</div> <!-- Closing alumni row properly -->
+
 	
 	
 	<br>
