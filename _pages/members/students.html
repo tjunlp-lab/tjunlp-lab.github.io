@@ -26,6 +26,25 @@ description: A member list sorted by name.
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    /* Make all cards in a row the same height */
+    .row > [class^="col-"],
+    .row > [class*=" col-"] {
+        display: flex;
+    }
+
+    .row > [class^="col-"] .thumbnail,
+    .row > [class*=" col-"] .thumbnail {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row > [class^="col-"] .thumbnail .caption,
+    .row > [class*=" col-"] .thumbnail .caption {
+        margin-top: auto;
     }
 
     /* Set up uniform size for all student entries */
